@@ -5,7 +5,7 @@ const ShowsGrid = props => {
   return (
     <div key="grid" className="row">
       {props.shows.map(show => (
-        <div key="card" className="col s12 m3 z-depth-5">
+        <div key="card" className="col s12 m3  z-depth-5">
           <div className="card card-panel hoverable ">
             <div className="card-image">
               <img alt=" " src={show.image} />

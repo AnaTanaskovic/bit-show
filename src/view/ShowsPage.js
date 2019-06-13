@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import {FetchShows}  from "./../services/FetchShows";
+import { FetchShows } from "./../services/FetchShows";
 import ShowsGrid from "./ShowsGrid";
 import Search from "./../components/Search";
-import Preloader from '../components/Preloader/Preloader'
+import Preloader from "../components/Preloader/Preloader";
 
 class ShowsPage extends Component {
   constructor(props) {
@@ -40,14 +40,15 @@ class ShowsPage extends Component {
 
   render() {
     const { searchShows } = this.state;
-  
 
     return (
       <>
         <Search searchAllShows={this.searchAllShows} />
-        {!this.state.shows.length?
-        <Preloader/>:<ShowsGrid shows={searchShows} />}
-        
+        {!this.state.shows.length ? (
+          <Preloader />
+        ) : (
+          <ShowsGrid shows={searchShows} />
+        )}
       </>
     );
   }
