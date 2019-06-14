@@ -3,18 +3,15 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="navbar-fixed">
-      <nav>
-        <div className="nav-wrapper grey darken-3">
-          <a href="bitshow" className="brand-logo center">
-            BIT SHOW
-          </a>
-          <ul className="right hide-on-med-and-down">
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <nav className="grey darken-3">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">BIT SHOW</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <Link to="/about">About</Link>
+      </ul>
+    </div>
+  </nav>
+        
     </div>
   );
 };

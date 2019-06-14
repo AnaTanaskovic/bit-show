@@ -53,7 +53,7 @@ class SingleShow extends Component {
     return show.length === 0 ? (
       <Preloader />
     ) : (
-      <div className="row">
+      <div className="row bg grey lighten-3">
         <div className="row">
           <div className="col s6 m6">
             <div className="card">
